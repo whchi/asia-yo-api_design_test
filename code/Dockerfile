@@ -9,4 +9,4 @@ RUN npm i
 
 EXPOSE 3001
 
-ENTRYPOINT ["npm", "run", "docker"]
+ENTRYPOINT ["npm", "run", "prod"]
