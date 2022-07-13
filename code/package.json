@@ -1,0 +1,34 @@
+{
+  "name": "asia-yo-pre-test",
+  "description": "calc currency ratio",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "whchi",
+  "license": "MIT",
+  "engines": {
+    "node": "16.*"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && mkdir ./dist && babel -d ./dist ./src -s --copy-files",
+    "watch": "nodemon --exec babel-node src/index.js",
+    "passport": "babel-node src/bin/passport.js local_test",
+    "test": "jest src/tests",
+    "prod": "pm2-runtime index.js"
+  },
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "koa": "^2.11.0",
+    "koa-logger": "2",
+    "pm2": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "eslint": "^7.2.0",
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^6.2.4"
+  }
+}

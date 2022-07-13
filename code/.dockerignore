@@ -1,0 +1,5 @@
+**/node_modules
+.eslintrc
+docker-compose.yml
+README.md
+npm-debug.log
