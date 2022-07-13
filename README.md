@@ -1,4 +1,4 @@
-[code here](code/README.md)
+[code here](code)
 # path
 [GET] `/api/currency-transfer/:price/:from/:to`
 # params
